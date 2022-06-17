@@ -16,4 +16,4 @@ Test: "It should price the pizza depending on the size and toppings is order."
 Code: 
 let newOrder = new Pizza (["pepperoni", "pineapple"], "medium")
 newOrder.addTotalCost();
-Expect Output:12
+Expect Output:12    

@@ -27,7 +27,7 @@ Pizza.prototype.addTotalCost = function() {
     this.price += 1;
   };    
   return this.price;
-};
+};   
 
 
 let newOrder = new Pizza (["pepperoni","pineapple"], "medium")
