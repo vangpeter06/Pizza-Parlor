@@ -34,10 +34,13 @@ $(document).ready(function() {
     event.preventDefault;
     const checkToppings = $("check#addToppings").val();
     const checkSize = $("check#sizePizza").val();
+    const finalPizza = new Pizza(checkSize, checkToppings);
     $("#size").text(size);
+    console.log(size);
     $("#toppings").text(toppings)
     $("#total").text(newOrder.addTotalCost());
-    $("#customer-output").text();
+    $("#customer-output").show();
+    $(".btn-submit").hide();
   })
 })
 // let newOrder = new Pizza (["pepperoni","pineapple"], "medium")
