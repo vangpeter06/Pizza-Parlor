@@ -29,5 +29,15 @@ Pizza.prototype.addTotalCost = function() {
   return this.price;
 };   
 
-
-let newOrder = new Pizza (["pepperoni","pineapple"], "medium")
+$(document).ready(function() {
+  $("form#container").submit(function(event){
+    event.preventDefault;
+    const checkToppings = $("check#addToppings").val();
+    const checkSize = $("check#sizePizza").val();
+    $("#size").text(size);
+    $("#toppings").text(toppings)
+    $("#total").text(newOrder.addTotalCost());
+    $("#customer-output").text();
+  })
+})
+// let newOrder = new Pizza (["pepperoni","pineapple"], "medium")

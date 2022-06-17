@@ -9,11 +9,10 @@
 	<title></title>
 </head>
 <body>
-	<div class="container">
+	<div id="container">
 		<h1>Peter Pizza Parlor</h1>
-		
-		<form>
-			<h4>What size pizza do you want:</h4>
+		<h4>What size pizza do you want:</h4>
+		<form id="sizePizza">	
 				<input type="checkbox">
 				<label for="small" id="small">small</label><br>
 				<input type="checkbox">
@@ -21,8 +20,8 @@
 				<input type="checkbox">
 		 		<label for="large" id="large">large</label><br>
 		</form> 
-		<form>
-			<h4>What toppings do you want for your pizza:</h4>
+		<h4>What toppings do you want for your pizza:</h4>
+		<form id="addToppings">
 				<input type="checkbox">
 				<label for="pepperoni" id="pepperoni">pepperoni</label><br>
 				<input type="checkbox">
@@ -37,8 +36,8 @@
 		<button type="submit" class="submit">Submit</button>
 		<button type="reset" class="reset"> Reset</button>
 		<div id="customer-order">
-			<p>Name you have order a <span class="size"></span> size pizza with the toppings of <span class="toppings"></span>.</p>
-			<p>Your <strong>grand total</strong>  is $<span class="total">.</span></p>
+			<p>Congratulations you have order a <span id="size"></span> size pizza with the toppings of <span id="toppings"></span>.</p>
+			<p>Your <strong>grand total</strong>  is $<span id="total">.</span></p>
 			
 		</div>
 	</div>
