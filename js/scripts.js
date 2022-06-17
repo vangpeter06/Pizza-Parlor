@@ -1,6 +1,7 @@
 function Pizza(toppings, size, price) {
-  this.topping = [];
+  this.topping = toppings;
   this.size = size;
-  this.price = 0;
+  this.price = price;
 } 
 
+let newOrder = new Pizza ("toppings, size, price")
