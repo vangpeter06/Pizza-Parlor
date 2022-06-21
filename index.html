@@ -9,37 +9,44 @@
 	<title></title>
 </head>
 <body>
-	<div id="container">
-		<h1>Peter Pizza Parlor</h1>
-		<h4>What size pizza do you want:</h4>
-		<form id="sizePizza">	
-				<input type="checkbox">
+	<form id="container">
+	<h1>Peter Pizza Parlor</h1>
+	<h4>What size pizza do you want:</h4>
+		<div class="form-group">
+			</div><div id="sizePizza">
+				<input type="checkbox" name="size">
 				<label for="small" id="small">small</label><br>
-				<input type="checkbox">
+				<input type="checkbox" name="size">
 				<label for="medium" id="medium">medium</label><br>
-				<input type="checkbox">
+				<input type="checkbox" name="size">
 		 		<label for="large" id="large">large</label><br>
-		</form> 
-		<h4>What toppings do you want for your pizza:</h4>
-		<form id="addToppings">
-				<input type="checkbox">
+			</div>	
+		</div> 
+	<h4>What toppings do you want for your pizza:</h4>
+		<div class="form-group">
+			<div id="addToppings">
+				<input type="checkbox" name="toppings">
 				<label for="pepperoni" id="pepperoni">pepperoni</label><br>
-				<input type="checkbox">
+				<input type="checkbox" name="toppings">
 				<label for="extraCheese" id="extraCheese">extra cheese</label><br>
-				<input type="checkbox">
+				<input type="checkbox" name="toppings">
 				<label for="anchovies" id="anchovies">anchovies</label><br>
-		 		<input type="checkbox">
+		 		<input type="checkbox" name="toppings">
 		 		<label for="pineapple" id="pineapple">pineapple</label><br>
-		</form> 
+			</div>
+		</div>
 		<br>
 		<br>
 		<button type="submit" class="submit">Submit</button>
 		<button type="reset" class="reset"> Reset</button>
+		</form> 
 		<div id="customer-order">
-			<p>Congratulations you have order a <span id="size"></span> size pizza with the toppings of <span id="toppings"></span>.</p>
-			<p>Your <strong>grand total</strong>  is $<span id="total">.</span></p>
-			
+			<span id="totalPar">
+				<p>Congratulations you have order a <span id="size"></span> size pizza with the toppings of <span id="toppings"></span>.</p>
+			</span>
+			<span id="finalPrice">
+				<p>Your <strong>grand total</strong> is $<span id="total"></span>.</p>
+			</span>
 		</div>
-	</div>
 </body>
 </html>
